@@ -1,0 +1,12 @@
+  <% include partials/header.ejs %>
+  <h1>Compose</h1>
+  <form class="" action="/compose" method="post">
+    <div class="form-group">
+      <label>Name</label>
+      <textarea class="form-control" name="postTitle" rows="1"> </textarea>
+      <label>Review</label>
+      <textarea class="form-control" rows="5" name="postBody"></textarea>
+    </div>
+    <button type="submit" class="btn btn-secondary style">Publish</button>
+  </form>
+  <% include partials/footer.ejs %>

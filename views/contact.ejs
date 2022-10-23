@@ -1,0 +1,33 @@
+<% include partials/header.ejs %>
+
+<div class="form-signin">
+  <form method="POST" action="/contact">
+    <h1 class="h3 mb-3 fw-normal">Contact me</h1>
+    
+    <div class="form-floating">
+      <input type="text" name="fName" class="form-control"  placeholder="First Name" required autofocus>
+      <label for="floatingInput fname">First Name</label>
+    </div>
+
+    <div class="form-floating">
+      <input type="text" name="lName" class="form-control" placeholder="Last Name" required>
+      <label for="floatingInput">Last Name</label>
+    </div>
+
+    <div class="form-floating">
+      <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+      <label for="floatingInput">Email Address</label>
+    </div>
+
+    <div class="form-floating">
+      <textarea rows="8" cols="80" name="details" class="form-control" id="floatingTextarea" style="height: 150px" placeholder="What would you like to write for us:" required></textarea>
+      <label for="floatingInput">What would you like to write</label>
+    </div>
+
+    <div class="checkbox mb-3">
+    </div>
+    <button class="w-100 btn btn-md btn-secondary" type="submit">Contact me</button>
+  </form>
+</div>
+
+  <% include partials/footer.ejs %>
