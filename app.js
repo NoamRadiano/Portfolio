@@ -18,8 +18,8 @@ const date = require(__dirname + "/date.js");
 const mailTransporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'pookloko57@gmail.com',
-        pass: 'cqkeutyeuvrqbyyc'
+        user: 'process.env.mailUser',
+        pass: 'process.env.mailPassword'
     }
 });
 
